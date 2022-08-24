@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    display: grid;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-color: gray;
+    color: white;
+    text-align: center;
+    grid-column-gap: 12px;
+    margin: 200px 550px auto;
+    align-content: center;
+    justify-content: center;
+    grid-template-areas: "header header header" "timer timer timer " "start stop reset";
+}
+
+h1 {
+    margin: -20px 0 0 0;
+    grid-area: header;
+}
+
+button {
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#startTimer {
+    grid-area: start;
+}
+
+#stopTimer {
+    grid-area: stop;
+}
+
+#reset-button {
+    grid-area: reset;
+}
+
+.timerDisplay {
+    margin: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: monospace;
+    grid-area: timer;
+}
